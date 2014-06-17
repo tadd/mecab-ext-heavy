@@ -71,7 +71,7 @@ nodes.count #=> 2
 5. Create new Pull Request
 
 ## License
-Copyright (c) 2013 Taiki ONO
+Copyright (c) 2014 Tadashi Saito
 
 MIT License
 
@@ -93,3 +93,8 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Thanks to
+
+Taiki ONO, the original author.
+https://github.com/taiki45/mecab-ext
