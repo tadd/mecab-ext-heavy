@@ -1,5 +1,5 @@
-# mecab-ext [![Build Status](https://travis-ci.org/taiki45/mecab-ext.png?branch=master)](https://travis-ci.org/taiki45/mecab-ext) [![Coverage Status](https://coveralls.io/repos/taiki45/mecab-ext/badge.png?branch=master)](https://coveralls.io/r/taiki45/mecab-ext?branch=master) [![Code Climate](https://codeclimate.com/github/taiki45/mecab-ext.png)](https://codeclimate.com/github/taiki45/mecab-ext) [![Gem Version](https://badge.fury.io/rb/mecab-ext.png)](http://badge.fury.io/rb/mecab-ext)
-A handy extensions for mecab-ruby.
+# mecab-ext-heavy
+A handy extensions for mecab-ruby, with mecab binary and NAIST dictionary.
 
 ## Installation
 At first install `Mecab` and `mecab-ruby`.
@@ -7,7 +7,7 @@ At first install `Mecab` and `mecab-ruby`.
 
 Then this line to your application's Gemfile:
 
-    gem 'mecab-ext'
+    gem 'mecab-ext-heavy'
 
 And then execute:
 
@@ -15,7 +15,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install mecab-ext
+    $ gem install mecab-ext-heavy
 
 ## Usage
 
