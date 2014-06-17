@@ -6,13 +6,13 @@ require 'mecab/ext/version'
 Gem::Specification.new do |spec|
   spec.add_dependency "activesupport", ">= 3.2.13"
 
-  spec.name          = "mecab-ext"
+  spec.name          = "mecab-ext-heavy"
   spec.version       = Mecab::Ext::VERSION
-  spec.authors       = ["Taiki ONO"]
-  spec.email         = ["taiks.4559@gmail.com"]
+  spec.authors       = ["Tadashi Saito"]
+  spec.email         = ["tad.a.digger<AT>gmail.com"]
   spec.description   = %q{Make mecab-ruby more handy for most of rubyist.}
   spec.summary       = %q{extensions for mecab-ruby}
-  spec.homepage      = "https://github.com/taiki45/mecab-ext"
+  spec.homepage      = "https://github.com/tadd/mecab-ext-heavy"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
