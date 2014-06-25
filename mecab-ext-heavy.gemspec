@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.version       = Mecab::Ext::Heavy::VERSION
   spec.authors       = ["Tadashi Saito"]
   spec.email         = ["tad.a.digger<AT>gmail.com"]
-  spec.description   = %q{mecab-ext with mecab and mecab-naist-jdic, so you can try mecab with Heroku}
+  spec.description   = %q{mecab-ext with mecab and mecab-naist-jdic, so you can just try mecab soon with Heroku}
   spec.summary       = %q{mecab-ext with mecab and mecab-naist-jdic}
   spec.homepage      = "https://github.com/tadd/mecab-ext-heavy"
   spec.license       = "MIT"
