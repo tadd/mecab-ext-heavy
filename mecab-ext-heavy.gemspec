@@ -2,13 +2,14 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'mecab/ext/version'
+require_relative 'version'
 
 Gem::Specification.new do |spec|
   spec.add_dependency "activesupport", "~> 3.2.13", ">= 3.2.13"
   spec.add_dependency "mini_portile", "~> 0"
 
   spec.name          = "mecab-ext-heavy"
-  spec.version       = Mecab::Ext::VERSION
+  spec.version       = Mecab::Ext::Heavy::VERSION
   spec.authors       = ["Tadashi Saito"]
   spec.email         = ["tad.a.digger<AT>gmail.com"]
   spec.description   = %q{Make mecab-ruby more handy for most of rubyist.}
