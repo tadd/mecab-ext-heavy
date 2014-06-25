@@ -1,0 +1,18 @@
+--- Makefile.in.orig	2014-06-26 07:17:04.385962877 +0900
++++ Makefile.in	2014-06-26 07:17:39.313474839 +0900
+@@ -512,11 +512,11 @@ export-package:
+ 	./upload.pl -p mecab -n @PACKAGE@ -r @VERSION@ -f @PACKAGE@-@VERSION@.tar.gz
+ 
+ install-exec-hook:
+-	if ! [ -d $(DESTDIR)/etc/mecab/dic/naist-jdic ]; \
+-		then mkdir -p $(DESTDIR)/etc/mecab/dic/naist-jdic; \
++	if ! [ -d ${prefix}/etc/mecab/dic/naist-jdic ]; \
++		then mkdir -p ${prefix}/etc/mecab/dic/naist-jdic; \
+ 	fi
+-	if ! [ -f $(DESTDIR)/etc/mecab/dic/naist-jdic/dicrc ]; \
+-		then $(LN_S) @MECAB_DICDIR@/dicrc $(DESTDIR)/etc/mecab/dic/naist-jdic/dicrc; \
++	if ! [ -f ${prefix}/etc/mecab/dic/naist-jdic/dicrc ]; \
++		then $(LN_S) @MECAB_DICDIR@/dicrc ${prefix}/etc/mecab/dic/naist-jdic/dicrc; \
+ 	fi
+ 
+ # Tell versions [3.59,3.63) of GNU make to not export all variables.

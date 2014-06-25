@@ -40,20 +40,23 @@ MiniPortile.class_eval do
   end
 end
 
-def cook_mecab
-  recipe = MiniPortile.new("mecab", "0.996")
-  recipe.files = %w[https://mecab.googlecode.com/files/mecab-0.996.tar.gz]
+def cook_internal(name, version, url, patches = [])
+  recipe = MiniPortile.new(name, version)
+  recipe.files = [url]
   recipe.configure_options += %w[--with-charset=utf8]
+  recipe.patch_files += patches.map(&File.method(:expand_path)) unless patches.empty?
   recipe.cook
   recipe.activate
 end
 
+def cook_mecab
+  cook_internal('mecab', '0.996', 'https://mecab.googlecode.com/files/mecab-0.996.tar.gz')
+end
+
 def cook_naist_jdic
-  recipe = MiniPortile.new("mecab-naist-jdic", "0.6.3b-20111013")
-  recipe.files = %w[http://jaist.dl.sourceforge.jp/naist-jdic/53500/mecab-naist-jdic-0.6.3b-20111013.tar.gz]
-  recipe.configure_options += %w[--with-charset=utf8]
-  recipe.cook
-  recipe.activate
+  cook_internal('mecab-naist-jdic', '0.6.3b-20111013',
+                'http://jaist.dl.sourceforge.jp/naist-jdic/53500/mecab-naist-jdic-0.6.3b-20111013.tar.gz',
+                %w[patch/prefix.patch])
 end
 
 cook_mecab
