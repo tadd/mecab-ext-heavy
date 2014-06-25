@@ -5,6 +5,7 @@ require 'mecab/ext/version'
 
 Gem::Specification.new do |spec|
   spec.add_dependency "activesupport", ">= 3.2.13"
+  spec.add_dependency "mini_portile"
 
   spec.name          = "mecab-ext-heavy"
   spec.version       = Mecab::Ext::VERSION
